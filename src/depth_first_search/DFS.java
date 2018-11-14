@@ -60,10 +60,13 @@ public class DFS {
 		
 	}
 	
+	/*The recursive depth first search algorithm uses a stack under the hood
+	 * to perform the recursion*/
 	public void recursiveDFS(Vertex root) {
 		// print the node which has just been popped
 		System.out.println(root + " ");
 		
+		// perform a depth first search on all the neighbouring nodes which have not been visited yet
 		for (Vertex vertex : root.getNeighbours()) {
 			if (!vertex.isVisited()) {
 				vertex.setVisited(true);
