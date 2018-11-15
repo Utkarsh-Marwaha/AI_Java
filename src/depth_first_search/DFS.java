@@ -22,6 +22,10 @@ public class DFS {
 		}
 	}
 	
+	/**
+	 * Iterative method for performing depth first search
+	 * @param root the node at which we start performing the depth first search
+	 */
 	public void iterativeDFS(Vertex root) {
 		
 		/**
